@@ -10,7 +10,9 @@ interface MealsGridProps {
 }
 
 const MealsGrid: FC<MealsGridProps> = (props) => {
+
     return (
+
         <ul className={styles.meals}>
             {props.meals.map(meal => <li key={meal.id}>
             
@@ -18,6 +20,7 @@ const MealsGrid: FC<MealsGridProps> = (props) => {
 
             </li>)}
         </ul>
+        
     )
 }
 

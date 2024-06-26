@@ -1,17 +1,19 @@
 import Link               from "next/link"
 import Image              from "next/image"
-import Navlink            from "./Navlink"
 import logoImg            from '@/assets/logo.png'
-import styles             from './styles/main-header.module.css'
+import Navlink            from "./Navlink"
 import BackgroundGradient from "./BackgroundGradient"
+import styles             from './styles/main-header.module.css'
 
 const MainHeader = () => {
 
 
     
     return (
+
         <>
         <BackgroundGradient />
+
         <header className={styles.header}>
             <Link className={styles.logo} href='/'>
                 <Image src={logoImg} alt="A plate with food on it" priority />
@@ -29,7 +31,9 @@ const MainHeader = () => {
                 </ul>
             </nav>
         </header>
+        
         </>
+
     )
 
 }

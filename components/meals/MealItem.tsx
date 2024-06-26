@@ -12,7 +12,9 @@ interface MealItemProps {
 }
 
 const MealItem: FC<MealItemProps> = (props) => {
+
     return (
+
         <article className={styles.meal}>
             <header>
                 <div className={styles.image}>
@@ -30,6 +32,7 @@ const MealItem: FC<MealItemProps> = (props) => {
                 <Link href={`/meals/${props.slug}`}>View Details</Link>
             </div>
         </article>
+        
     )
 }
 
